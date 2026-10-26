@@ -1,7 +1,7 @@
 {
-  "name": "Backend",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "A  backend ",
+  "description": "A backend application",
   "keywords": [
     "javascript",
     "backend",
@@ -10,16 +10,19 @@
   "license": "ISC",
   "author": "Suraj Acharya",
   "type": "module",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "nodemon": "^3.1.14",
     "prettier": "^3.9.10"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
     "dotenv": "^18.0.9",
     "express": "^5.3.0",
     "mongoose": "^9.11.4"
